@@ -1,0 +1,207 @@
+{
+  "ats_action_verbs": [
+    "Architected", "Automated", "Built", "Configured", "Containerized",
+    "Debugged", "Delivered", "Deployed", "Designed", "Developed",
+    "Engineered", "Enhanced", "Established", "Executed", "Implemented",
+    "Improved", "Integrated", "Led", "Maintained", "Managed",
+    "Migrated", "Monitored", "Optimized", "Orchestrated", "Overhauled",
+    "Provisioned", "Reduced", "Refactored", "Re-engineered", "Resolved",
+    "Scaled", "Secured", "Spearheaded", "Standardized", "Streamlined",
+    "Tested", "Transformed", "Troubleshot", "Upgraded"
+  ],
+  "ats_metrics_phrases": [
+    "reduced latency by", "improved throughput by", "decreased downtime by",
+    "increased efficiency by", "processed over", "reduced costs by",
+    "achieved 99.9% uptime", "serving millions of requests",
+    "cut deployment time by", "reduced error rate by",
+    "improved response time by", "scaled to handle",
+    "reduced infrastructure costs by", "boosted performance by",
+    "accelerated delivery by", "decreased bug count by",
+    "improved test coverage to", "reduced build time by"
+  ],
+  "soft_skills": [
+    "Cross-functional Collaboration", "Stakeholder Communication",
+    "Agile Methodology", "Scrum Framework", "Technical Leadership",
+    "Problem Solving", "Analytical Thinking", "Critical Thinking",
+    "Time Management", "Mentorship", "Code Review",
+    "Technical Documentation", "Requirements Gathering",
+    "Team Collaboration", "Project Management", "Sprint Planning",
+    "Continuous Improvement", "Strategic Planning"
+  ],
+  "certifications_keywords": {
+    "cloud": [
+      "AWS Certified Solutions Architect", "AWS Certified Developer",
+      "AWS Certified DevOps Engineer", "AWS Cloud Practitioner",
+      "Azure Fundamentals (AZ-900)", "Azure Developer (AZ-204)",
+      "Azure Solutions Architect (AZ-305)",
+      "Google Cloud Professional Data Engineer",
+      "Google Cloud Associate Cloud Engineer",
+      "Google Cloud Professional Cloud Architect"
+    ],
+    "data": [
+      "Databricks Certified Data Engineer", "Snowflake SnowPro Core",
+      "Apache Kafka Certification", "Google Data Analytics Certificate",
+      "IBM Data Science Professional Certificate",
+      "Tableau Desktop Specialist"
+    ],
+    "devops": [
+      "Certified Kubernetes Administrator (CKA)",
+      "Certified Kubernetes Application Developer (CKAD)",
+      "HashiCorp Terraform Associate",
+      "Docker Certified Associate",
+      "Linux Foundation Certified System Administrator"
+    ],
+    "security": [
+      "CompTIA Security+", "Certified Ethical Hacker (CEH)",
+      "CISSP", "OWASP Top 10"
+    ],
+    "agile": [
+      "Certified ScrumMaster (CSM)", "PMI-ACP",
+      "Professional Scrum Master (PSM I)",
+      "SAFe Agilist", "ITIL Foundation"
+    ],
+    "programming": [
+      "Oracle Certified Java Programmer (OCP)",
+      "Microsoft Certified: Azure Developer Associate",
+      "Meta Front-End Developer Certificate",
+      "Meta Back-End Developer Certificate",
+      "Google IT Automation with Python"
+    ]
+  },
+  "roles": {
+    "Full Stack Developer": {
+      "languages": ["JavaScript", "TypeScript", "Python", "Java", "C#", "Ruby", "Go", "PHP", "Rust"],
+      "frontend": ["React", "Angular", "Vue.js", "Next.js", "Nuxt.js", "HTML5", "CSS3", "Tailwind CSS", "SASS", "LESS", "Bootstrap", "Material UI", "Chakra UI", "Shadcn UI", "Svelte", "SvelteKit", "Remix"],
+      "backend": ["Node.js", "Express", "Django", "FastAPI", "Flask", "Spring Boot", "ASP.NET Core", "Ruby on Rails", "NestJS", "Koa", "Hono"],
+      "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "SQLite", "DynamoDB", "Cassandra", "Firebase Firestore", "Supabase", "PlanetScale", "CockroachDB"],
+      "tools_and_devops": ["Git", "GitHub", "GitLab", "Bitbucket", "Docker", "Kubernetes", "Webpack", "Vite", "esbuild", "Turbopack", "Jest", "Vitest", "Cypress", "Playwright", "Postman", "AWS", "Vercel", "Netlify", "Heroku", "Railway", "Nginx", "Apache"],
+      "concepts": ["RESTful APIs", "GraphQL", "gRPC", "Microservices", "CI/CD", "Agile", "Scrum", "WebSockets", "OAuth 2.0", "JWT", "Serverless", "Event-Driven Architecture", "Domain-Driven Design (DDD)", "Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "SOLID Principles", "Design Patterns", "API Gateway", "Service Mesh", "12-Factor App"]
+    },
+    "Java Developer": {
+      "languages": ["Java 8+", "Java 11", "Java 17", "Java 21", "Kotlin", "Groovy", "SQL", "PL/SQL"],
+      "frameworks": ["Spring Boot", "Spring MVC", "Spring Security", "Spring Data JPA", "Spring Cloud", "Spring WebFlux", "Hibernate", "JPA", "JSF", "Struts", "Quarkus", "Micronaut", "Vert.x"],
+      "databases": ["Oracle DB", "PostgreSQL", "MySQL", "MariaDB", "Cassandra", "MongoDB", "Redis", "H2", "Elasticsearch"],
+      "tools_and_servers": ["Maven", "Gradle", "Apache Tomcat", "JBoss/WildFly", "Jetty", "WebLogic", "JUnit 5", "Mockito", "TestNG", "Docker", "Jenkins", "GitHub Actions", "Apache Kafka", "RabbitMQ", "ActiveMQ", "SonarQube", "Jacoco", "Swagger/OpenAPI", "Log4j", "SLF4J", "Logback"],
+      "concepts": ["Object-Oriented Programming (OOP)", "SOLID Principles", "Design Patterns (Singleton, Factory, Observer, Strategy)", "Microservices Architecture", "Concurrency", "Multithreading", "JVM Tuning", "Garbage Collection", "Event-Driven Architecture", "CQRS", "Saga Pattern", "Circuit Breaker", "API Versioning", "Connection Pooling", "Caching Strategies", "Database Sharding", "Horizontal Scaling"]
+    },
+    "MERN Stack Developer": {
+      "languages": ["JavaScript", "TypeScript", "ES6+", "HTML5", "CSS3"],
+      "technologies": ["MongoDB", "Express.js", "React.js", "Node.js", "Next.js", "Mongoose"],
+      "frontend": ["Redux Toolkit", "Zustand", "Recoil", "Context API", "React Query (TanStack Query)", "React Router", "React Hook Form", "Tailwind CSS", "Material UI", "Chakra UI", "Ant Design", "Framer Motion", "Radix UI"],
+      "backend": ["Mongoose", "JWT", "Socket.io", "Passport.js", "Bcrypt", "GraphQL", "Apollo Server", "Multer", "Nodemailer", "Bull/BullMQ", "Agenda"],
+      "tools": ["Git", "GitHub", "Postman", "Thunder Client", "Docker", "Docker Compose", "Vercel", "Heroku", "Netlify", "Railway", "Render", "Jest", "React Testing Library", "Supertest", "ESLint", "Prettier", "Husky", "npm", "yarn", "pnpm"],
+      "concepts": ["Single Page Applications (SPA)", "Server-Side Rendering (SSR)", "Static Site Generation (SSG)", "Incremental Static Regeneration (ISR)", "REST APIs", "Authentication & Authorization", "Role-Based Access Control (RBAC)", "State Management", "Web Vitals", "Core Web Vitals", "Lazy Loading", "Code Splitting", "Tree Shaking"]
+    },
+    "Data Engineer": {
+      "languages": ["Python", "SQL", "Scala", "Java", "Bash", "R", "PL/SQL", "HiveQL"],
+      "frameworks": ["Apache Spark", "Apache Flink", "Hadoop", "MapReduce", "Pandas", "PySpark", "Apache Beam", "Dask", "Polars"],
+      "warehouses_and_lakes": ["Snowflake", "Amazon Redshift", "Google BigQuery", "PostgreSQL", "Databricks", "Delta Lake", "Apache Hive", "Apache Iceberg", "Azure Synapse Analytics", "Presto", "Trino", "ClickHouse", "Apache Druid"],
+      "orchestration": ["Apache Airflow", "Luigi", "Prefect", "Dagster", "Mage", "AWS Step Functions", "Azure Data Factory"],
+      "tools_and_ingestion": ["Kafka", "Apache NiFi", "dbt (data build tool)", "Fivetran", "Airbyte", "Stitch", "Docker", "Kubernetes", "AWS Glue", "AWS EMR", "AWS Lambda", "Terraform", "Great Expectations", "Soda", "Monte Carlo"],
+      "concepts": ["ETL / ELT", "Data Pipelines", "Data Warehousing", "Data Lake", "Data Lakehouse", "Data Modeling", "Star Schema", "Snowflake Schema", "Dimensional Modeling", "Distributed Systems", "Data Governance", "Data Quality", "Data Lineage", "Data Catalog", "Batch Processing", "Stream Processing", "Real-time Analytics", "Change Data Capture (CDC)", "Slowly Changing Dimensions (SCD)", "Partitioning", "Bucketing", "Data Mesh"]
+    },
+    "Frontend Developer": {
+      "languages": ["JavaScript", "TypeScript", "HTML5", "CSS3", "SCSS", "SASS"],
+      "frameworks": ["React", "Vue.js", "Angular", "Next.js", "Nuxt.js", "Svelte", "SvelteKit", "Remix", "Astro", "Gatsby", "Solid.js"],
+      "styling": ["Tailwind CSS", "SASS", "LESS", "Styled Components", "CSS Modules", "CSS-in-JS", "Bootstrap", "Material UI", "Chakra UI", "Radix UI", "Headless UI", "Figma (UI/UX)", "Adobe XD"],
+      "state_management": ["Redux", "Redux Toolkit", "Zustand", "Recoil", "MobX", "Jotai", "Pinia", "NgRx", "Vuex"],
+      "testing": ["Jest", "Vitest", "Cypress", "Playwright", "React Testing Library", "Storybook", "Chromatic"],
+      "tools": ["Webpack", "Vite", "esbuild", "Turbopack", "Rollup", "npm", "yarn", "pnpm", "ESLint", "Prettier", "Husky", "Lighthouse"],
+      "concepts": ["Responsive Design", "Mobile-First Design", "Accessibility (a11y)", "WCAG Compliance", "SEO", "Core Web Vitals", "State Management", "Web Performance Optimization", "Progressive Web Apps (PWA)", "Lazy Loading", "Code Splitting", "Tree Shaking", "Server-Side Rendering (SSR)", "Static Site Generation (SSG)", "Internationalization (i18n)", "Component-Driven Development", "Design Systems", "Atomic Design"]
+    },
+    "Backend Developer": {
+      "languages": ["Python", "Java", "Go", "C#", "Node.js", "TypeScript", "SQL", "Rust", "Ruby", "PHP", "Elixir"],
+      "frameworks": ["Django", "FastAPI", "Flask", "Spring Boot", "Spring Cloud", "Gin", "Echo", "Fiber", "Express.js", "NestJS", "ASP.NET Core", "Ruby on Rails", "Laravel", "Phoenix"],
+      "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Cassandra", "Neo4j", "DynamoDB", "CockroachDB", "TimescaleDB", "InfluxDB", "Memcached"],
+      "messaging": ["Apache Kafka", "RabbitMQ", "Amazon SQS", "Amazon SNS", "Redis Pub/Sub", "NATS", "Apache Pulsar", "Celery", "Bull/BullMQ"],
+      "tools": ["Docker", "Kubernetes", "Nginx", "HAProxy", "Envoy", "AWS", "GCP", "Azure", "Postman", "Swagger/OpenAPI", "gRPC", "Protocol Buffers", "Terraform", "GitHub Actions", "Jenkins"],
+      "concepts": ["RESTful APIs", "GraphQL", "gRPC", "Microservices Architecture", "Monolithic Architecture", "Caching (Redis, Memcached, CDN)", "System Design", "Database Indexing", "Query Optimization", "ACID Properties", "CAP Theorem", "Load Balancing", "Rate Limiting", "API Gateway", "Service Discovery", "Circuit Breaker Pattern", "Saga Pattern", "Event Sourcing", "CQRS", "Horizontal Scaling", "Vertical Scaling", "Database Replication", "Database Sharding", "Connection Pooling", "Idempotency", "Eventual Consistency"]
+    },
+    "DevOps Engineer": {
+      "scripting": ["Bash", "Python", "Go", "Ruby", "PowerShell", "Groovy"],
+      "cloud": ["AWS (EC2, S3, IAM, VPC, RDS, Lambda, ECS, EKS, CloudFront, Route53)", "Microsoft Azure (AKS, App Service, Azure DevOps, Azure Functions)", "Google Cloud Platform (GKE, Cloud Run, Cloud Functions, BigQuery, Pub/Sub)"],
+      "ci_cd": ["Jenkins", "GitHub Actions", "GitLab CI/CD", "CircleCI", "ArgoCD", "Tekton", "TeamCity", "Azure DevOps Pipelines", "AWS CodePipeline", "Bamboo"],
+      "orchestration": ["Docker", "Kubernetes", "Helm", "Kustomize", "Docker Compose", "Docker Swarm", "Istio", "Linkerd", "Podman", "Rancher", "OpenShift"],
+      "iac_and_config": ["Terraform", "Ansible", "Chef", "Puppet", "CloudFormation", "Pulumi", "Vagrant", "Packer", "AWS CDK"],
+      "monitoring": ["Prometheus", "Grafana", "ELK Stack (Elasticsearch, Logstash, Kibana)", "Datadog", "Splunk", "New Relic", "PagerDuty", "OpsGenie", "Jaeger", "Zipkin", "OpenTelemetry", "AWS CloudWatch", "Fluentd", "Loki"],
+      "security": ["Vault (HashiCorp)", "SonarQube", "Trivy", "Snyk", "Aqua Security", "Falco", "OWASP", "SSL/TLS", "Secrets Management"],
+      "concepts": ["Infrastructure as Code (IaC)", "Site Reliability Engineering (SRE)", "CI/CD", "GitOps", "Zero Trust Security", "High Availability (HA)", "Disaster Recovery (DR)", "Blue-Green Deployment", "Canary Deployment", "Rolling Updates", "Immutable Infrastructure", "Service Level Objectives (SLO)", "Service Level Indicators (SLI)", "Mean Time to Recovery (MTTR)", "Chaos Engineering", "Platform Engineering", "Observability", "Toil Reduction"]
+    },
+    "Machine Learning Engineer": {
+      "languages": ["Python", "R", "C++", "SQL", "Julia", "Scala"],
+      "frameworks": ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "Hugging Face Transformers", "XGBoost", "LightGBM", "CatBoost", "JAX", "Flax", "ONNX", "spaCy", "NLTK", "OpenCV", "Detectron2"],
+      "data_manipulation": ["Pandas", "NumPy", "SciPy", "Polars", "Dask", "Vaex", "Apache Arrow"],
+      "deployment_and_mlops": ["MLflow", "Kubeflow", "Docker", "FastAPI", "Flask", "TensorRT", "ONNX Runtime", "TorchServe", "TF Serving", "Weights & Biases (W&B)", "DVC", "Ray", "Seldon Core", "BentoML", "Amazon SageMaker", "Google Vertex AI", "Azure ML", "Airflow", "Feature Store (Feast)", "Label Studio"],
+      "concepts": ["Deep Learning", "Natural Language Processing (NLP)", "Computer Vision", "Generative AI", "Large Language Models (LLMs)", "Retrieval-Augmented Generation (RAG)", "Fine-Tuning", "LoRA", "QLoRA", "Prompt Engineering", "Model Deployment", "Model Serving", "Feature Engineering", "Feature Store", "A/B Testing", "Transfer Learning", "Reinforcement Learning", "Federated Learning", "Model Interpretability (SHAP, LIME)", "Hyperparameter Tuning", "Experiment Tracking", "Model Registry", "ML Pipeline Orchestration", "Data Drift Detection", "Model Monitoring"]
+    },
+    "Data Scientist": {
+      "languages": ["Python", "R", "SQL", "Julia", "SAS"],
+      "libraries": ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Plotly", "Statsmodels", "NLTK", "spaCy", "XGBoost", "LightGBM", "CatBoost", "SciPy", "Gensim", "NetworkX"],
+      "visualization_and_bi": ["Tableau", "Power BI", "Looker", "Plotly", "Streamlit", "Dash", "Metabase", "Apache Superset", "D3.js", "Google Data Studio"],
+      "databases": ["PostgreSQL", "Snowflake", "BigQuery", "Redshift", "MongoDB", "ClickHouse"],
+      "tools": ["Jupyter Notebooks", "Google Colab", "Git", "Docker", "MLflow", "Weights & Biases", "DVC", "Great Expectations", "dbt"],
+      "concepts": ["Statistical Modeling", "Hypothesis Testing", "Bayesian Statistics", "Predictive Analytics", "Prescriptive Analytics", "Machine Learning", "Deep Learning", "Natural Language Processing (NLP)", "Time Series Analysis", "Anomaly Detection", "Recommendation Systems", "Clustering", "Classification", "Regression", "Data Mining", "Data Storytelling", "Experimentation", "Causal Inference", "Customer Segmentation", "Churn Prediction", "Survival Analysis"]
+    },
+    "Mobile Developer (iOS/Android)": {
+      "languages": ["Swift", "Kotlin", "Java", "Objective-C", "Dart", "JavaScript", "TypeScript", "C++"],
+      "frameworks": ["React Native", "Flutter", "SwiftUI", "Jetpack Compose", "UIKit", "Android SDK", "Expo", "Ionic", "Xamarin", "KMM (Kotlin Multiplatform Mobile)"],
+      "backend_services": ["Firebase", "AWS Amplify", "Supabase", "Realm", "Core Data", "SQLite", "Room Database", "Apollo GraphQL", "Retrofit", "Alamofire", "URLSession"],
+      "tools": ["Xcode", "Android Studio", "Fastlane", "CocoaPods", "SPM (Swift Package Manager)", "Gradle", "TestFlight", "Google Play Console", "Firebase Crashlytics", "Firebase Analytics", "App Center", "Bitrise", "CircleCI"],
+      "testing": ["XCTest", "Espresso", "JUnit", "Detox", "Appium", "UI Automator"],
+      "concepts": ["Mobile UI/UX", "App Store Optimization (ASO)", "Push Notifications", "Offline Storage", "Memory Management", "MVVM Architecture", "MVP Architecture", "VIPER Architecture", "Clean Architecture", "Dependency Injection", "Deep Linking", "Universal Links", "App Clips", "Instant Apps", "Accessibility (a11y)", "Responsive Layouts", "Animation & Motion Design"]
+    },
+    "Cloud Architect": {
+      "platforms": ["AWS", "Microsoft Azure", "Google Cloud Platform (GCP)", "Oracle Cloud", "IBM Cloud"],
+      "compute": ["EC2", "Lambda", "ECS", "EKS", "Fargate", "Azure Functions", "Cloud Run", "App Engine", "GKE"],
+      "storage": ["S3", "EBS", "EFS", "Azure Blob Storage", "Google Cloud Storage", "Glacier"],
+      "networking": ["VPC", "CloudFront", "Route53", "API Gateway", "Load Balancer (ALB/NLB)", "Direct Connect", "Transit Gateway", "PrivateLink"],
+      "databases": ["RDS", "Aurora", "DynamoDB", "ElastiCache", "Cloud SQL", "Cosmos DB", "Cloud Spanner"],
+      "security": ["IAM", "KMS", "WAF", "Shield", "GuardDuty", "Security Hub", "Secrets Manager", "Certificate Manager"],
+      "concepts": ["Well-Architected Framework", "Multi-Region Architecture", "Disaster Recovery", "Cost Optimization", "Auto Scaling", "Serverless Architecture", "Hybrid Cloud", "Multi-Cloud Strategy", "Landing Zones", "Compliance (SOC2, HIPAA, GDPR, PCI-DSS)"]
+    },
+    "QA / Test Engineer": {
+      "languages": ["Python", "Java", "JavaScript", "TypeScript", "C#"],
+      "automation": ["Selenium", "Cypress", "Playwright", "Appium", "Robot Framework", "TestNG", "JUnit", "pytest", "Cucumber", "SpecFlow"],
+      "api_testing": ["Postman", "REST Assured", "SoapUI", "Karate", "k6", "Artillery"],
+      "performance": ["JMeter", "Gatling", "Locust", "BlazeMeter", "LoadRunner"],
+      "tools": ["JIRA", "TestRail", "Zephyr", "Allure Report", "Jenkins", "GitHub Actions", "Docker", "BrowserStack", "Sauce Labs"],
+      "concepts": ["Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "Continuous Testing", "Shift-Left Testing", "Regression Testing", "Integration Testing", "End-to-End Testing", "Performance Testing", "Load Testing", "Stress Testing", "Security Testing", "API Testing", "Test Automation Strategy", "Test Coverage", "Defect Lifecycle"]
+    },
+    "Cybersecurity Engineer": {
+      "tools": ["Burp Suite", "Metasploit", "Nmap", "Wireshark", "Nessus", "Qualys", "Snort", "Splunk SIEM", "CrowdStrike", "Palo Alto", "Fortinet"],
+      "frameworks": ["NIST Cybersecurity Framework", "ISO 27001", "OWASP Top 10", "MITRE ATT&CK", "CIS Benchmarks", "Zero Trust Architecture"],
+      "concepts": ["Penetration Testing", "Vulnerability Assessment", "Incident Response", "Threat Intelligence", "SIEM", "SOC Operations", "Identity and Access Management (IAM)", "Encryption (AES, RSA, TLS)", "Network Security", "Application Security", "Cloud Security", "Endpoint Detection and Response (EDR)", "Security Orchestration (SOAR)"]
+    },
+    "Software Engineer": {
+      "languages": ["Python", "Java", "JavaScript", "TypeScript", "Go", "Rust", "C++", "C#", "Kotlin", "Ruby", "Scala", "SQL"],
+      "frameworks": ["React", "Next.js", "Node.js", "Express.js", "Spring Boot", "Spring MVC", "FastAPI", "Django", "Flask", "NestJS", "Gin", ".NET Core", "Ruby on Rails"],
+      "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB", "Elasticsearch", "Cassandra", "Snowflake", "BigQuery"],
+      "cloud_and_devops": ["AWS", "GCP", "Azure", "Docker", "Kubernetes", "Helm", "Terraform", "GitHub Actions", "Jenkins", "GitLab CI/CD", "ArgoCD", "CircleCI"],
+      "tools": ["Git", "GitHub", "GitLab", "Bitbucket", "JIRA", "Confluence", "Postman", "Swagger/OpenAPI", "VS Code", "IntelliJ IDEA", "Maven", "Gradle", "npm", "yarn", "pnpm"],
+      "testing": ["Unit Testing", "Integration Testing", "End-to-End Testing", "pytest", "JUnit 5", "Jest", "Vitest", "Mocha", "Cypress", "Playwright", "Selenium", "TestNG", "Mockito"],
+      "concepts": ["REST APIs", "RESTful APIs", "RESTful API Design", "GraphQL", "gRPC", "Microservices", "Microservices Architecture", "Monolithic Architecture", "Event-Driven Architecture", "Object-Oriented Programming (OOP)", "OOP", "Functional Programming", "SOLID Principles", "Design Patterns", "Concurrency", "Multithreading", "Asynchronous Programming", "Distributed Systems", "Caching", "Load Balancing", "API Gateway", "CI/CD", "Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "Agile", "Scrum", "Sprint Planning", "Code Review", "Pair Programming", "Refactoring", "System Design", "Data Structures and Algorithms (DSA)", "Big O Notation", "Time Complexity", "Space Complexity", "Database Indexing", "Query Optimization", "JWT", "OAuth 2.0", "Authentication", "Authorization", "WebSockets", "Server-Sent Events (SSE)", "Message Queues", "Apache Kafka", "RabbitMQ", "SQS", "Containerization", "Orchestration", "Infrastructure as Code (IaC)", "Observability", "Logging", "Monitoring", "Tracing"]
+    },
+    "Site Reliability Engineer (SRE)": {
+      "languages": ["Python", "Go", "Bash", "Ruby"],
+      "platforms": ["AWS", "GCP", "Azure", "Kubernetes", "OpenShift"],
+      "observability": ["Prometheus", "Grafana", "Datadog", "New Relic", "Splunk", "ELK Stack", "Loki", "OpenTelemetry", "Jaeger", "Zipkin", "PagerDuty"],
+      "automation_and_iac": ["Terraform", "Pulumi", "Ansible", "Chef", "Puppet", "Helm", "Kustomize", "CloudFormation", "Argo CD", "GitOps"],
+      "ci_cd": ["Jenkins", "GitHub Actions", "GitLab CI/CD", "Spinnaker", "CircleCI"],
+      "concepts": ["SLA / SLO / SLI", "Error Budget", "Toil Reduction", "Incident Response", "Postmortem Analysis", "Blameless Culture", "Chaos Engineering", "Resilience Engineering", "Capacity Planning", "Performance Tuning", "On-Call Rotation", "Disaster Recovery", "High Availability", "Mean Time to Detect (MTTD)", "Mean Time to Recovery (MTTR)", "Service Level Management", "Observability", "Logging Pipelines", "Metric Aggregation", "Distributed Tracing"]
+    }
+  },
+  "common_aliases": {
+    "REST APIs": ["RESTful APIs", "RESTful API", "REST API", "RESTful API Design", "REST endpoints"],
+    "CI/CD": ["Continuous Integration", "Continuous Deployment", "Continuous Delivery", "CI/CD Pipelines"],
+    "OOP": ["Object-Oriented Programming", "Object Oriented Programming"],
+    "Apache Kafka": ["Kafka", "Kafka Streams", "Kafka Connect"],
+    "Spring Boot": ["Spring Framework", "Spring", "Spring MVC", "Spring Cloud", "Spring Data"],
+    "PostgreSQL": ["Postgres", "Postgresql"],
+    "JavaScript": ["JS", "ES6", "ES6+", "ECMAScript"],
+    "TypeScript": ["TS"],
+    "Node.js": ["NodeJS", "Node"],
+    "AWS": ["Amazon Web Services"],
+    "GCP": ["Google Cloud", "Google Cloud Platform"],
+    "Microservices": ["Microservices Architecture", "Microservice Architecture", "Microservice"]
+  }
+}

@@ -1,0 +1,124 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & \textbf{\small #2} \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & \textbf{\small #2}\\\end{tabular*}\vspace{-7pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\begin{center}
+    {\Huge \scshape Abhishek Verma} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 9026049600 ~ 
+    \href{mailto:abhishek1pw@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{abhishek1pw@gmail.com}} ~ 
+    \href{https://linkedin.com/in/abhishek-verma-profile}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/abhishek-verma-profile}} ~ 
+    \href{https://github.com/abhishek-verma-github}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/abhishek-verma-github}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading{AKTU University}{2020 - 2024}{B.Tech in Computer Science Engineering}{Lucknow, India}
+    
+    \resumeSubheading{Rani Laxmi Bai Memorial SS School}{2016 - 2018}{Higher Secondary Education}{Lucknow, India}
+    
+  \resumeSubHeadingListEnd
+
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading{Navadr Technologies}{Oct 2024 - Present}{Data Engineer}{Pune, India}
+      \resumeItemListStart
+        
+        \resumeItem{Engineered production ETL pipelines in Python and SQL processing 500K+ daily records, improving throughput by 35\% through batch optimization and parallel execution.}
+        
+        \resumeItem{Designed normalized data models in PostgreSQL and MongoDB, reducing average query latency by 25\% via index optimization and materialized views.}
+        
+        \resumeItem{Built and deployed an automated data quality validation framework adopted by 12+ engineers, reducing pipeline failures by 40\% through schema enforcement and anomaly detection.}
+        
+        \resumeItem{Developed RESTful API endpoints with FastAPI and JWT authentication serving 100K+ daily requests across microservices.}
+        
+        \resumeItem{Containerized data services with Docker and orchestrated deployments on Kubernetes, integrating CI/CD pipelines in GitHub Actions and Jenkins.}
+        
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading{\textbf{Learning Management System (LMS)} $|$ \emph{React.js, Node.js, Express.js, MongoDB, Bootstrap, JWT, OAuth 2.0}}{2024}
+          \resumeItemListStart
+            
+            \resumeItem{Architected a full-stack Learning Management System with authentication and progress tracking, improving course management for an intuitive user experience.}
+            
+            \resumeItem{Implemented RESTful API design patterns with Express.js and MongoDB, supporting role-based access via JWT and OAuth 2.0.}
+            
+            \resumeItem{Deployed the platform using Docker containers and configured CI/CD via GitHub Actions for automated test and release cycles.}
+            
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      
+      \resumeProjectHeading{\textbf{QR Code-Based Attendance System} $|$ \emph{Python, OpenCV, NumPy, SQL, Flask}}{2023}
+          \resumeItemListStart
+            
+            \resumeItem{Designed and deployed a QR code-based attendance system using Python and Flask, enabling real-time attendance tracking across 3 departments.}
+            
+            \resumeItem{Built computer-vision based QR detection with OpenCV and NumPy, reducing average mark-in time by 70\% versus manual roll-call.}
+            
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      
+    \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     
+     \textbf{Languages}{: Python, SQL, Java, JavaScript, C++} \\
+     
+     \textbf{Backend and APIs}{: FastAPI, Django, Flask, Node.js, Express.js, RESTful API Design, Microservices} \\
+     
+     \textbf{Databases}{: PostgreSQL, MongoDB, Firebase, Query Optimization, RDBMS} \\
+     
+     \textbf{Cloud and DevOps}{: Docker, Kubernetes, AWS, GitHub Actions, Jenkins, CI/CD} \\
+     
+     \textbf{Frontend}{: React.js, Bootstrap} \\
+     
+     \textbf{Tools and Practices}{: Git, GitHub, JWT, OAuth 2.0, Agile, DSA} \\
+     
+    }}
+ \end{itemize}
+\end{document}

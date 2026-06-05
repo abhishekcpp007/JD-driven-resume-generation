@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Automate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Editor Panel -->
+        <div class="editor-panel">
+            <div class="header">
+                <h1>AI Resume Builder</h1>
+                <p>Maximize your ATS score seamlessly.</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="template">Resume Template</label>
+                <select id="template">
+                    <option value="ats_pro">ATS Pro (Recommended)</option>
+                    <option value="jakes_classic">Jake's Classic</option>
+                    <option value="vaishanth_modern">Vaishanth Modern</option>
+                    <option value="deedy_standard">Deedy Standard</option>
+                    <option value="elegant_tabularx">Elegant TabularX</option>
+                    <option value="jakes_multicols">Jake's Multicols</option>
+                </select>
+            </div>
+            
+            <div class="form-group flex-fill">
+                <label for="job-description">Job Description (Target Role)</label>
+                <textarea id="job-description" placeholder="Paste the Job Description here..."></textarea>
+            </div>
+            
+            <div class="form-group flex-fill">
+                <label for="base-resume">Base Resume (Markdown)</label>
+                <textarea id="base-resume" placeholder="Paste your markdown resume data here..."></textarea>
+            </div>
+            
+            <label class="dry-run">
+                <input type="checkbox" id="dry-run-toggle"> Dry run (skip AI, use fixture)
+            </label>
+
+            <button id="generate-btn" class="generate-btn">
+                <span class="btn-text">Generate ATS Resume</span>
+                <span class="loader" style="display: none;"></span>
+            </button>
+
+            <div id="error-msg" class="error-msg" style="display: none;"></div>
+        </div>
+
+        <!-- Preview Panel -->
+        <div class="preview-panel">
+            <div class="preview-header">
+                <h2>Live Preview</h2>
+            </div>
+            <div class="preview-content">
+                <div id="empty-state" class="empty-state">
+                    Your generated PDF will appear here.
+                </div>
+                <iframe id="pdf-viewer" src="" style="display: none;"></iframe>
+            </div>
+            <div id="score-panel" class="score-panel" style="display: none;">
+                <div class="score-row">
+                    <div id="score-badge" class="score-badge">ATS Score: --%</div>
+                    <div id="score-meta" class="score-meta"></div>
+                    <button id="toggle-missing" class="toggle-btn" type="button">Show missing keywords</button>
+                </div>
+                <div id="missing-panel" class="missing-panel" style="display: none;">
+                    <div class="missing-title">Missing JD keywords (consider weaving these into your base resume):</div>
+                    <div id="missing-list" class="missing-list"></div>
+                </div>
+                <div id="ai-warning" class="ai-warning" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

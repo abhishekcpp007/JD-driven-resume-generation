@@ -1,0 +1,87 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-1pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{\large#1} & \textbf{\small #2} \\\textit{\large#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\begin{center}
+    {\huge << data.first_name >> << data.last_name >>} \\ \vspace{2pt} 
+    {<< data.phone >>} ~ \small{-}
+    \href{mailto:<< data.email >>}{\color{blue}{<< data.email >>}}
+    [% if data.linkedin %]
+    ~ \small{-} \href{https://<< data.linkedin >>}{\color{blue}{<< data.linkedin >>}} 
+    [% endif %]
+    [% if data.github %]
+    ~ \small{-} \href{https://<< data.github >>}{\color{blue}{<< data.github >>}}
+    [% endif %]
+\end{center}
+
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+    [% for edu in data.education %]
+    \resumeSubheading{<< edu.institution >>}{<< edu.location|default('') >>}{<< edu.degree >>}{<< edu.date >>}
+    [% endfor %]
+  \resumeSubHeadingListEnd
+
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     [% for category in data.skills_categories %]
+     \textbf{\normalsize{<< category.name >>:}}{ \normalsize{[% for skill in category['items'] %]<< skill >>[% if not loop.last %], [% endif %][% endfor %]}} \\
+     [% endfor %]
+     }}
+ \end{itemize}
+ 
+\section{\color{airforceblue}WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+    [% for job in data.experience %]
+    \resumeSubheading{<< job.title >>}{}{<< job.company >>}{<< job.date >>}
+      \resumeItemListStart
+        [% for bullet in job.bullets %]
+        \resumeItem{\normalsize{<< bullet >>}}
+        [% endfor %]
+      \resumeItemListEnd  
+    [% endfor %]
+  \resumeSubHeadingListEnd
+
+\section{\color{airforceblue}PROJECTS}    
+    \resumeItemListStart
+        [% for project in data.projects %]
+        \resumeItem{\normalsize{\textbf{<< project.title >>}, << project.bullets|join(' ') >>}}
+        [% endfor %]
+    \resumeItemListEnd   
+\end{document}

@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Christopher}{Liow}{ % Your name
+\href{mailto:chrisliow@gmail.com}{chrisliow@gmail.com} | 215.375.4852 % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{Purdue University}
+
+\descript{Computer Engineering}
+\location{Expected Dec 2015 \\ West Lafayette, IN }
+
+\sectionsep % Some whitespace after the section
+
+\descript{BS in Computer Engineering}
+\location{Expected Dec. 2015 } 
+College of Engineering \\
+First Year Engineering Honors Program
+
+
+\sectionsep % Some whitespace after the section
+
+%------------------------------------------------
+\subsection{Central Bucks East HS}
+\location{Doylestown, PA}
+Graduated Summa Cum Laude \\
+SAT: 2270/2400
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+
+%------------------------------------------------
+
+\subsection{Software}
+
+Object Oriented Programming \\
+Software Engineering Tools Lab \\
+{\footnotesize \textit{\textbf{(BASH \& Python 3) }}} \\
+Data Structures \\
+Programming in Python \\
+Advanced C Programming \\
+Compilers
+\sectionsep
+\subsection{Hardware}
+ASIC Design \\
+Microcontroller Design/Interfacing \\
+Digital Computer Design \& Prototyping \\
+Electronic Circuit Analysis \& Design \\
+
+\sectionsep % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+
+\location{Experienced:}
+Python \textbullet{} Java \textbullet{} C\# \textbullet{} C \textbullet{} Verilog \textbullet{} Oracle SQL \textbullet{} HTML/CSS/JavaScript/JQuery \textbullet{} \\
+\location{Familiar:}
+BASH \textbullet{} C++ \textbullet{} R \textbullet{} MySQL \textbullet{}\\
+BASH \textbullet{} C++ \textbullet{} R \textbullet{} MySQL\\
+\sectionsep
+
+\subsection{Tools/Applications}
+Visual Studio \textbullet{} Eclipse \textbullet{} PyQt \textbullet{} MATLAB
+
+\sectionsep
+\subsection{Operating Systems}
+Windows \textbullet{} Linux \textbullet{} UNIX
+
+\sectionsep % Some whitespace after the section
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+Github: github.com/purdoo \\
+HackerRank: hackerrank.com/chrisliow \\
+LinkedIn: linkedin.com/in/cliow \\
+
+
+\sectionsep % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\runsubsection{Clarity Partners LLC.}
+\descript{| Associate Software Engineer}
+
+\location{May. 2015 – present | Chicago, IL}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Design and develop at all layers (front-end + back-end) public-facing applications for civilians to access and utilize police resources.  
+\item Co-authored Visual Studio library containing custom Bootstrap, WebGrid, and Form Validation extension methods for internal use.
+\item Create automated scripts that check/merge/edit/compare internal databases on a routine basis (Oracle SQL)
+\item Primarily used ASP.NET MVC with Entity Framework, experience with C\#, HTML/CSS/JS, and Oracle SQL
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+%------------------------------------------------
+\runsubsection{Delphi}
+\descript{| Software Engineering and Design Intern}
+
+\location{June 2014 – Present | Kokomo, IN}
+\begin{tightemize}
+\item Implemented new features for Kayak and Bus Monitor applications in C\#
+\item Developed new message tracking algorithm, drastically improved speed and increased message capacity 10x 
+\item Wrote extensions to allow users to open/edit databases in variety of formats
+\item Organize and handle bugs and issues reported from users, continuously update software to meet client needs.
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+%------------------------------------------------
+
+
+
+\runsubsection{Purdue Libraries}
+\descript{| Workstation Support Technician}
+
+\location{May 2013 – Jan. 2014 | West Lafayette, IN}
+\begin{tightemize}
+\item Provided technical support for staff and faculty of Purdue Libraries
+\item Co-authored internal and external customer knowledgebase, as well as composing and editing operational documentation of processes and networks
+\item Worked independently and on small teams to solve technical issues that arise
+\end{tightemize}
+
+
+
+
+%------------------------------------------------
+% Research
+%------------------------------------------------
+
+\section{Design Experience}
+
+\runsubsection{DVI Image Processing ASIC} \\
+Dynamic image-adjustment ASIC capable of color correction
+\begin{tightemize}
+\item Hardware implementation of the Daltonization color-correction algorithm for color blind users
+\item Able to keep up with 60FPS at 640x480 resolution while maintaining an average color error of <0.05\%.
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{MultiCore Processor}
+\descript{}
+
+Designed a multicore processor capable of handling the MIPS instruction set. 
+\begin{tightemize}
+\item Pipelined to handle hazards from instructions, components, and memory as well as the ability to handle up to 5 instructions ‘in flight’.
+\item Utilizes cache coherence to operate efficiently with multiple processors
+\item Capable of interfacing variable-latency RAM
+\item Written in Verilog and VHDL with automated scripts in BASH
+\end{tightemize}
+
+
+
+%------------------------------------------------
+% Awards
+%------------------------------------------------
+
+\section{Honors/Awards} 
+
+\begin{tabular}{rll}
+2015 & Single Cycle Processor Design (ranked 7 out of 50+ in efficiency) \\
+2012 & Purdue First Year Engineering Honors Program \\
+2012 & Recipient of AT\&T Foundation Scholarship \\
+2011 & Recipient of Purdue Presidential Scholarship (4 year scholarship) \\
+\end{tabular}
+
+\sectionsep % Some whitespace after the section
+
+%------------------------------------------------
+% Societies
+%------------------------------------------------
+
+%\section{Membership} 
+
+%\begin{tabular}{rll}
+%2011-2015 & Alpha Kappa Lambda Fraternity\\
+
+%\end{tabular}
+
+%\sectionsep % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

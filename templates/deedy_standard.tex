@@ -1,0 +1,83 @@
+\documentclass[letterpaper]{deedy-resume}
+\begin{document}
+\lastupdated 
+
+\namesection{<< data.first_name >>}{<< data.last_name >>}{ 
+\href{mailto:<< data.email >>}{<< data.email >>} 
+[% if data.phone %]
+| << data.phone >>
+[% endif %]
+[% if data.location %]
+| << data.location >>
+[% endif %]
+}
+
+\begin{minipage}[t]{0.33\textwidth} 
+\section{Education} 
+[% for edu in data.education %]
+\subsection{<< edu.institution >>}
+\descript{<< edu.degree >>}
+\location{<< edu.date >> \\ << edu.location|default('') >>}
+[% if edu.grade %]
+\location{<< edu.grade >>}
+[% endif %]
+\sectionsep 
+[% endfor %]
+
+\section{Skills}
+[% for category in data.skills_categories %]
+\subsection{<< category.name >>}
+[% for skill in category['items'] %]
+<< skill >>[% if not loop.last %] \textbullet{} [% endif %]
+[% endfor %]
+\sectionsep
+[% endfor %]
+
+\section{Links} 
+Github: \href{https://<< data.github >>}{<< data.github >>} \\
+LinkedIn: \href{https://<< data.linkedin >>}{<< data.linkedin >>}
+\sectionsep 
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+\section{Experience}
+[% for job in data.experience %]
+\runsubsection{<< job.company >>}
+\descript{| << job.title >>}
+\location{<< job.date >> | << job.location >>}
+\vspace{\topsep} 
+\begin{tightemize}
+    [% for bullet in job.bullets %]
+    \item << bullet >>
+    [% endfor %]
+\end{tightemize}
+\sectionsep 
+[% endfor %]
+
+\section{Design Experience}
+[% for project in data.projects %]
+\runsubsection{<< project.title >>} \\
+<< project.subtitle >>
+\begin{tightemize}
+    [% for bullet in project.bullets %]
+    \item << bullet >>
+    [% endfor %]
+\end{tightemize}
+\sectionsep 
+[% endfor %]
+
+[% if data.certifications or data.honors %]
+\section{Honors/Awards} 
+\begin{tabular}{rll}
+[% for honor in data.honors %]
+<< honor.date >> & << honor.title >> \\
+[% endfor %]
+[% for cert in data.certifications %]
+Cert & << cert >> \\
+[% endfor %]
+\end{tabular}
+\sectionsep 
+[% endif %]
+\end{minipage} 
+\end{document}

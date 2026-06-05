@@ -1,0 +1,143 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hmargin=0.45in,vmargin=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1F3A68}
+\definecolor{rulegray}{HTML}{B0B4BA}
+\definecolor{secondary}{HTML}{4A4F57}
+
+\urlstyle{same}
+\pagenumbering{gobble}
+\raggedbottom
+\linespread{0.97}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+  pdftitle={Resume}
+}
+
+\titleformat{\section}
+  {\color{accent}\normalsize\bfseries}
+  {}{0em}
+  {}[{\color{rulegray}\titlerule[0.5pt]}\vspace{-3pt}]
+\titlespacing*{\section}{0pt}{4pt}{1pt}
+
+\setlist[itemize]{
+  leftmargin=0.2in,
+  itemsep=0pt,
+  topsep=1pt,
+  parsep=0pt,
+  partopsep=0pt,
+  label=\textcolor{accent}{\small\textbullet}
+}
+
+\newcommand{\headersep}{\hspace{4pt}\textcolor{rulegray}{|}\hspace{4pt}}
+
+\newcommand{\jobHeading}[4]{%
+  \noindent\textbf{#1}\hfill\textcolor{secondary}{#2}\\
+  {\itshape\color{secondary}#3}\hfill\textcolor{secondary}{\itshape #4}\\[-3pt]%
+}
+
+\newcommand{\projectHeading}[3]{%
+  \noindent\textbf{#1}\quad\textcolor{secondary}{\itshape #2}\hfill\textcolor{secondary}{#3}\\[-3pt]%
+}
+
+\setlength{\parskip}{1pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+  {\color{accent}\LARGE\bfseries << data.first_name >> << data.last_name >>}\\[3pt]
+  {\color{secondary}\small << data.location >>[% if data.phone %]\headersep << data.phone >>[% endif %][% if data.email %]\headersep \href{mailto:<< data.email >>}{<< data.email >>}[% endif %]}\\[2pt]
+  {\small[% if data.linkedin %]\href{https://<< data.linkedin >>}{<< data.linkedin >>}[% endif %][% if data.github %]\headersep \href{https://<< data.github >>}{<< data.github >>}[% endif %][% if data.portfolio %]\headersep \href{<< data.portfolio >>}{<< data.portfolio >>}[% endif %]}
+\end{center}
+\vspace{-2pt}
+
+[% if data.summary %]
+\section{Professional Summary}
+\noindent << data.summary >>
+[% endif %]
+
+[% if data.skills_categories %]
+\section{Skills}
+[% for category in data.skills_categories %]
+\noindent\textbf{<< category.name >>:} [% for skill in category['items'] %]<< skill >>[% if not loop.last %] \textperiodcentered{} [% endif %][% endfor %]\\
+[% endfor %]
+[% endif %]
+
+[% if data.experience %]
+\section{Experience}
+[% for job in data.experience %]
+\jobHeading{<< job.company >>}{<< job.date >>}{<< job.title >>}{<< job.location >>}
+\begin{itemize}
+[% for bullet in job.bullets %]
+  \item << bullet >>
+[% endfor %]
+\end{itemize}
+[% endfor %]
+[% endif %]
+
+[% if data.projects %]
+\section{Projects}
+[% for project in data.projects %]
+\projectHeading{<< project.title >>}{<< project.tech_stack >>}{<< project.date >>}
+\begin{itemize}
+[% for bullet in project.bullets %]
+  \item << bullet >>
+[% endfor %]
+\end{itemize}
+[% endfor %]
+[% endif %]
+
+[% if data.education %]
+\section{Education}
+[% for edu in data.education %]
+\noindent\textbf{<< edu.institution >>}\hfill\textcolor{secondary}{<< edu.date >>}\\
+{\itshape\color{secondary}<< edu.degree >>}[% if edu.location %]\hfill\textcolor{secondary}{\itshape << edu.location >>}[% endif %][% if edu.grade %] \\ {\color{secondary}<< edu.grade >>}[% endif %][% if edu.details %] \\ {\color{secondary}<< edu.details >>}[% endif %]
+\vspace{3pt}
+[% endfor %]
+[% endif %]
+
+[% if data.certifications %]
+\section{Certifications}
+\begin{itemize}
+[% for cert in data.certifications %]
+  \item << cert >>
+[% endfor %]
+\end{itemize}
+[% endif %]
+
+[% if data.honors %]
+\section{Honors and Awards}
+\begin{itemize}
+[% for honor in data.honors %]
+  \item [% if honor.date %]\textbf{<< honor.date >>:} [% endif %]<< honor.title >>
+[% endfor %]
+\end{itemize}
+[% endif %]
+
+[% if data.leadership %]
+\section{Leadership}
+[% for role in data.leadership %]
+\noindent\textbf{<< role.organization >>}\hfill\textcolor{secondary}{<< role.date >>}\\
+{\itshape\color{secondary}<< role.role >>}[% if role.location %]\hfill\textcolor{secondary}{\itshape << role.location >>}[% endif %]\\[-3pt]
+\begin{itemize}
+[% for bullet in role.bullets %]
+  \item << bullet >>
+[% endfor %]
+\end{itemize}
+[% endfor %]
+[% endif %]
+
+\end{document}

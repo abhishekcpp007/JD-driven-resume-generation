@@ -1,0 +1,100 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & \textbf{\small #2} \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & \textbf{\small #2}\\\end{tabular*}\vspace{-7pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\begin{center}
+    {\Huge \scshape << data.first_name >> << data.last_name >>} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ << data.phone >> ~ 
+    \href{mailto:<< data.email >>}{\raisebox{-0.2\height}\faEnvelope\ \underline{<< data.email >>}} ~ 
+    \href{https://<< data.linkedin >>}{\raisebox{-0.2\height}\faLinkedin\ \underline{<< data.linkedin >>}} ~ 
+    \href{https://<< data.github >>}{\raisebox{-0.2\height}\faGithub\ \underline{<< data.github >>}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    [% for edu in data.education %]
+    \resumeSubheading{<< edu.institution >>}{<< edu.date >>}{<< edu.degree >>}{<< edu.location|default('') >>}
+    [% endfor %]
+  \resumeSubHeadingListEnd
+
+[% if data.coursework %]
+\section{Relevant Coursework}
+    \begin{multicols}{4}
+        \begin{itemize}[itemsep=-5pt, parsep=3pt]
+            [% for course in data.coursework %]
+            \item\small << course >>
+            [% endfor %]
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+[% endif %]
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    [% for job in data.experience %]
+    \resumeSubheading{<< job.company >>}{<< job.date >>}{<< job.title >>}{<< job.location|default('') >>}
+      \resumeItemListStart
+        [% for bullet in job.bullets %]
+        \resumeItem{<< bullet >>}
+        [% endfor %]
+      \resumeItemListEnd
+    [% endfor %]
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      [% for project in data.projects %]
+      \resumeProjectHeading{\textbf{<< project.title >>} $|$ \emph{<< project.tech_stack >>}}{<< project.date >>}
+          \resumeItemListStart
+            [% for bullet in project.bullets %]
+            \resumeItem{<< bullet >>}
+            [% endfor %]
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      [% endfor %]
+    \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     [% for category in data.skills_categories %]
+     \textbf{<< category.name >>}{: [% for skill in category['items'] %]<< skill >>[% if not loop.last %], [% endif %][% endfor %]} \\
+     [% endfor %]
+    }}
+ \end{itemize}
+\end{document}

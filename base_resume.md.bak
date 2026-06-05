@@ -1,0 +1,58 @@
+# Abhishek Verma
+Email: akvikramaditya007cppcoder@gmail.com | Phone: +91 9935331043 | Location: Lucknow, India
+LinkedIn: linkedin.com/in/abhishek-verma-profile
+GitHub: github.com/abhishek-verma-github
+
+## Summary
+Full-Stack Web Developer with hands-on experience building responsive, scalable web applications using React.js, Node.js, Express.js, and MongoDB. Skilled in designing RESTful APIs, reusable UI components, and end-to-end features across the MERN stack. Proven track record improving application performance and delivering production-ready, user-focused web experiences.
+
+## Education
+### AKTU University
+- Degree: B.Tech in Computer Science Engineering
+- Date: 2020 -- 2024
+- Grade: 75%
+- Location: Lucknow, India
+
+### Rani Laxmi Bai Memorial SS School
+- Degree: Higher Secondary Education
+- Date: 2016 -- 2018
+- Grade: 12th: 78%, 10th: 95%
+- Location: Lucknow, India
+
+## Experience
+### Navadr Technologies | Software Developer | Oct 2024 -- Present | Pune, India
+- Developed and maintained responsive web application features using React.js, JavaScript, and REST APIs, improving user engagement and reducing page load times by 30%.
+- Built and integrated RESTful API endpoints with Node.js and Express.js backed by PostgreSQL and MongoDB, supporting 500K+ daily requests.
+- Implemented reusable React components and state management, cutting front-end development time by 25% and improving code maintainability.
+- Collaborated in an Agile team using Git, GitHub, and CI/CD pipelines to ship features with automated testing and code reviews.
+
+## Personal Projects
+### Learning Management System (LMS)
+- Subtitle: Full-Stack MERN Platform
+- Tech Stack: React.js, Node.js, Express.js, MongoDB, JWT, Bootstrap
+- Bullet: Architected a full-stack Learning Management System with JWT authentication, role-based access, and progress tracking, serving an intuitive course-management experience.
+- Bullet: Designed RESTful APIs in Express.js and a responsive React.js front end, reducing average API response time by 35% through query optimization.
+
+### E-Commerce Web Application
+- Subtitle: Full-Stack Online Store
+- Tech Stack: React.js, Redux, Node.js, Express.js, MongoDB, Stripe API
+- Bullet: Built a responsive e-commerce platform with product search, cart, and secure Stripe checkout, handling 1K+ catalog items with dynamic filtering.
+- Bullet: Engineered REST APIs and JWT-based authentication, integrating Redux for predictable state management across the React front end.
+
+### Real-Time Chat Application
+- Subtitle: WebSocket Messaging App
+- Tech Stack: React.js, Node.js, Socket.IO, Express.js, MongoDB
+- Bullet: Developed a real-time chat application using Socket.IO and React.js supporting instant messaging, typing indicators, and online presence for concurrent users.
+
+## Skills
+- Languages: JavaScript, TypeScript, HTML5, CSS3, Python, SQL, Java
+- Frontend: React.js, Redux, Next.js, Bootstrap, Tailwind CSS, Responsive Design, JSX, Hooks
+- Backend & APIs: Node.js, Express.js, FastAPI, RESTful API Design, JWT, OAuth 2.0
+- Databases: MongoDB, PostgreSQL, MySQL, Firebase
+- Tools & DevOps: Git, GitHub, Docker, GitHub Actions, CI/CD, Webpack, npm, Postman
+- Practices: Agile, Microservices, Responsive Web Design, Unit Testing, DSA
+
+## Certifications & Achievements
+- Full-Stack Web Development - freeCodeCamp
+- Ethical Hacking - iNeuron (Cybersecurity & Penetration Testing)
+- Gold Medalist - AKTU Zonal Kho-Kho Championship

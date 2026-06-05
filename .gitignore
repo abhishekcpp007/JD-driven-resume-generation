@@ -1,0 +1,16 @@
+.env
+.env.local
+.env.*
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+.DS_Store

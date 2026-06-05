@@ -1,0 +1,141 @@
+{
+  "first_name": "Kamna",
+  "last_name": "Verma",
+  "email": "kamnaverma087@gmail.com",
+  "phone": "+91 9336240264",
+  "location": "Lucknow, Uttar Pradesh, India",
+  "linkedin": "linkedin.com/in/kamna-verma",
+  "github": "",
+  "portfolio": "",
+  "summary": "Motivated B.Com (Honours) First Division graduate from University of Lucknow with a strong foundation in accountancy, GST, corporate accounting, audit, and business policy. Completed a 9-week Sales & Marketing internship at Wealth Clinic Pvt. Ltd., gaining hands-on experience in client relationship management, documentation, and target-based operations. Eager to contribute to banking operations, back-office functions, or finance-related roles with strong communication, analytical, and MS Office skills.",
+  "education": [
+    {
+      "institution": "Modern Girls College of Professional Studies, Lucknow (University of Lucknow)",
+      "degree": "B.Com (Honours)",
+      "date": "2022 - 2025",
+      "location": "Lucknow, Uttar Pradesh",
+      "grade": "68.58% | First Division | Grand Total: 2743/4000 | NAAC A++ Institution",
+      "details": "Key Subjects: Corporate Accounting, GST in India, Contemporary Audit, Business Policy, Governance & Business Ethics, Entrepreneurship & Project Management"
+    },
+    {
+      "institution": "Delhi Public School, Shaheed Path, Lucknow (CBSE)",
+      "degree": "Senior Secondary (Class XII) - Commerce Stream",
+      "date": "2020 - 2022",
+      "location": "Lucknow, Uttar Pradesh",
+      "grade": "63% | Subjects: Accountancy, Business Studies, Economics, English Core, Computer Science",
+      "details": ""
+    },
+    {
+      "institution": "Durgapur Public School, Bidhannagar (CBSE)",
+      "degree": "Secondary (Class X)",
+      "date": "2018 - 2020",
+      "location": "Durgapur, West Bengal",
+      "grade": "58.8%",
+      "details": ""
+    }
+  ],
+  "experience": [
+    {
+      "company": "Wealth Clinic Pvt. Ltd.",
+      "title": "Sales & Marketing Intern",
+      "location": "Lucknow, Uttar Pradesh",
+      "date": "July 2024 - August 2024",
+      "bullets": [
+        "Managed client outreach, lead generation, and follow-up documentation for real estate products under Senior Manager Sales, contributing to structured 9-week sales pipeline.",
+        "Coordinated KYC documentation, client correspondence, and record maintenance ensuring accuracy in compliance and data entry tasks.",
+        "Prepared sales presentations and marketing materials for prospective clients, demonstrating strong written and verbal communication skills.",
+        "Maintained daily MIS reports in MS Excel and supported back-office operations including filing and customer query resolution."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "GST Compliance & Financial Reporting Study",
+      "subtitle": "Academic Project",
+      "tech_stack": "MS Excel, Tally Concepts, GST Framework",
+      "date": "2025",
+      "bullets": [
+        "Analyzed GST computation, input tax credit reconciliation, and return filing processes as part of B.Com Honours coursework, applying real-world compliance frameworks.",
+        "Prepared financial statements and audit reports adhering to corporate accounting standards, demonstrating proficiency in balance sheet analysis and ledger management."
+      ],
+      "url": ""
+    },
+    {
+      "title": "Business Ethics & Corporate Governance Report",
+      "subtitle": "Academic Research Project",
+      "tech_stack": "Research, MS Word, MS PowerPoint",
+      "date": "2024",
+      "bullets": [
+        "Researched and authored a comprehensive report on corporate governance frameworks and ethical business practices across Indian financial institutions.",
+        "Presented findings to faculty panel, showcasing ability to translate complex regulatory concepts into clear written and verbal communication formats."
+      ],
+      "url": ""
+    }
+  ],
+  "skills_categories": [
+    {
+      "name": "Finance & Accounting",
+      "items": ["Accountancy", "Corporate Accounting", "GST (Goods and Services Tax)", "Financial Statements", "Audit & Compliance", "Tally (Basic)", "Bookkeeping", "Ledger Management"]
+    },
+    {
+      "name": "Banking & Back Office",
+      "items": ["KYC Documentation", "MIS Reporting", "Data Entry", "Record Maintenance", "Customer Query Resolution", "Compliance Documentation", "Banking Operations"]
+    },
+    {
+      "name": "Business & Commerce",
+      "items": ["Business Studies", "Economics", "Business Policy", "Corporate Governance", "Entrepreneurship", "Business Ethics", "Project Management"]
+    },
+    {
+      "name": "Computer & Office Tools",
+      "items": ["MS Excel", "MS Word", "MS PowerPoint", "MS Office Suite", "Computer Science Fundamentals"]
+    },
+    {
+      "name": "Communication & Soft Skills",
+      "items": ["Client Relationship Management", "Verbal Communication", "Written Communication", "Presentation Skills", "Attention to Detail", "Team Collaboration"]
+    }
+  ],
+  "coursework": [
+    "Goods and Services Tax in India",
+    "Corporate Accounting",
+    "Contemporary Audit",
+    "Business Policy",
+    "Governance & Business Ethics",
+    "Entrepreneurship & Project Management"
+  ],
+  "interests": [],
+  "soft_skills": [
+    "Communication",
+    "Attention to Detail",
+    "Client Relationship Management",
+    "Team Collaboration",
+    "Time Management",
+    "Analytical Thinking"
+  ],
+  "certifications": [
+    "Internship Completion Certificate - Sales & Marketing, Wealth Clinic Pvt. Ltd. (2024)",
+    "B.Com (Honours) First Division - University of Lucknow (2025)"
+  ],
+  "honors": [
+    {
+      "date": "2025",
+      "title": "Passed B.Com (Honours) in First Division, University of Lucknow"
+    },
+    {
+      "date": "2025",
+      "title": "Graduated from NAAC A++ Accredited Institution - Modern Girls College of Professional Studies"
+    }
+  ],
+  "por": [],
+  "leadership": [],
+  "keywords_used": [
+    "Accountancy", "Corporate Accounting", "GST", "Goods and Services Tax", "Financial Statements",
+    "Audit", "Compliance", "KYC Documentation", "MIS Reporting", "Data Entry",
+    "Record Maintenance", "Banking Operations", "Back Office", "Customer Relationship Management",
+    "Client Relationship Management", "Business Studies", "Economics", "Business Policy",
+    "Corporate Governance", "Business Ethics", "Entrepreneurship", "MS Excel", "MS Word",
+    "MS PowerPoint", "MS Office", "Communication", "Verbal Communication", "Written Communication",
+    "Presentation Skills", "Attention to Detail", "Team Collaboration", "Lead Generation",
+    "Sales", "Marketing", "Documentation", "Tally", "Bookkeeping", "Ledger Management",
+    "First Division", "B.Com Honours", "University of Lucknow"
+  ]
+}

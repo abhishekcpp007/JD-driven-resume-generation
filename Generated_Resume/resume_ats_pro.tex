@@ -1,0 +1,126 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hmargin=0.55in,vmargin=0.4in]{geometry}
+\usepackage{anyfontsize}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{1F3A68}
+\definecolor{rulegray}{HTML}{B0B4BA}
+\definecolor{secondary}{HTML}{4A4F57}
+
+\urlstyle{same}
+\pagenumbering{gobble}
+\linespread{1.0}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+  pdftitle={Abhishek Verma - Resume}
+}
+
+\titleformat{\section}
+  {\color{accent}\fontsize{11.5pt}{13pt}\selectfont\bfseries}
+  {}{0em}
+  {}[{\color{rulegray}\titlerule[0.6pt]}\vspace{1pt}]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+\setlist[itemize]{
+  leftmargin=0.18in,
+  itemsep=1.6pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt,
+  label=\textcolor{accent}{\small\textbullet}
+}
+
+\newcommand{\headersep}{\hspace{5pt}\textcolor{rulegray}{|}\hspace{5pt}}
+
+\newcommand{\jobHeading}[4]{%
+  \noindent\textbf{#1}\hfill\textcolor{secondary}{#2}\\
+  {\itshape\color{secondary}#3}\hfill\textcolor{secondary}{\itshape #4}\\[-2pt]%
+}
+
+\newcommand{\projectHeading}[3]{%
+  \noindent\textbf{#1}\hfill\textcolor{secondary}{#3}\\
+  {\itshape\color{secondary}#2}\\[-2pt]%
+}
+
+\setlength{\parskip}{2pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\fontsize{9.3pt}{11.6pt}\selectfont
+
+\begin{center}
+  {\color{accent}\fontsize{20pt}{22pt}\selectfont\bfseries Abhishek Verma}\\[5pt]
+  {\color{secondary}\small Lucknow, India\headersep +91 9935331043\headersep \href{mailto:akvikramaditya007cppcoder@gmail.com}{akvikramaditya007cppcoder@gmail.com}}\\[3pt]
+  {\small\href{https://linkedin.com/in/abhishek-verma-profile}{linkedin.com/in/abhishek-verma-profile}\headersep \href{https://github.com/abhishek-verma-github}{github.com/abhishek-verma-github}}
+\end{center}
+\vspace{3pt}
+
+\section{Professional Summary}
+\noindent Full-Stack Web Developer skilled in building responsive, scalable MERN applications. Proficient in JavaScript, TypeScript, HTML, CSS, React.js, and Node.js, with strong experience designing RESTful APIs, reusable React components, and clean user interfaces delivered in Agile teams using Git, Docker, and CI/CD.
+
+\section{Skills}
+\noindent\textbf{Languages:} JavaScript \textperiodcentered{} TypeScript \textperiodcentered{} HTML \textperiodcentered{} CSS \textperiodcentered{} SQL \textperiodcentered{} Java \textperiodcentered{} Python\\
+\noindent\textbf{Frontend:} React.js \textperiodcentered{} Redux \textperiodcentered{} Next.js \textperiodcentered{} Tailwind CSS \textperiodcentered{} Bootstrap \textperiodcentered{} Responsive Web Design \textperiodcentered{} JSX \textperiodcentered{} Hooks\\
+\noindent\textbf{Backend \& APIs:} Node.js \textperiodcentered{} Express.js \textperiodcentered{} RESTful APIs \textperiodcentered{} REST API Design \textperiodcentered{} JWT Authentication \textperiodcentered{} OAuth 2.0 \textperiodcentered{} GraphQL\\
+\noindent\textbf{Databases:} MongoDB \textperiodcentered{} PostgreSQL \textperiodcentered{} MySQL \textperiodcentered{} Firebase\\
+\noindent\textbf{Tools \& DevOps:} Git \textperiodcentered{} GitHub \textperiodcentered{} Docker \textperiodcentered{} CI/CD \textperiodcentered{} Webpack \textperiodcentered{} npm \textperiodcentered{} Postman \textperiodcentered{} Jest\\
+\noindent\textbf{Methodologies:} Agile \textperiodcentered{} Microservices \textperiodcentered{} Unit Testing \textperiodcentered{} Query Optimization \textperiodcentered{} Responsive Web Design \textperiodcentered{} DSA\\
+
+\section{Experience}
+\jobHeading{Hitachi}{Oct 2024 -- Present}{Software Developer}{Pune, India}
+\begin{itemize}
+  \item Built responsive web interfaces with React.js, Next, and TypeScript, cutting page load times by 30\%.
+  \item Developed REST, GraphQL, and WebSocket APIs with Node and Express, serving 500K+ daily requests.
+  \item Optimized SQL queries through indexing and query tuning on PostgreSQL, reducing query latency by 40\%.
+  \item Built reusable React components with Redux state management, reducing front-end development time by 25\%.
+  \item Shipped features in Agile using Git, GitHub, Docker, and CI/CD with automated tests and code reviews.
+\end{itemize}
+
+\section{Projects}
+\projectHeading{Learning Management System (LMS)}{React.js, Node.js, Express.js, MongoDB, JWT, Bootstrap}{2024}
+\begin{itemize}
+  \item Built a full-stack MERN LMS with JWT authentication, role-based access, and progress tracking.
+  \item Designed Express.js REST APIs and a responsive React.js UI, cutting API response time by 35\%.
+\end{itemize}
+
+\projectHeading{E-Commerce Web Application}{React.js, Redux, Node.js, Express.js, MongoDB, Stripe API}{2024}
+\begin{itemize}
+  \item Built a responsive store with product search, cart, and secure Stripe checkout for 1K+ items.
+  \item Engineered REST APIs and JWT authentication, with Redux managing React state across the app.
+  \item Optimized Webpack code-splitting to handle 2000+ concurrent users, cutting latency by 15\%.
+\end{itemize}
+
+\projectHeading{Real-Time Chat Application}{React.js, Node.js, Socket.IO, Express.js, MongoDB}{2023}
+\begin{itemize}
+  \item Built a real-time chat app with Socket.IO and React.js featuring messaging and online presence.
+  \item Backed it with Node, Express, MongoDB, and JWT authentication for secure multi-room chat.
+\end{itemize}
+
+\section{Education}
+\noindent\textbf{AKTU University}\hfill\textcolor{secondary}{2020 -- 2024}\\
+{\itshape\color{secondary}B.Tech in Computer Science Engineering}\hfill\textcolor{secondary}{\itshape Lucknow, India} \\ {\color{secondary}Grade: 75\%}
+\vspace{2pt}
+
+\noindent\textbf{Rani Laxmi Bai Memorial SS School}\hfill\textcolor{secondary}{2016 -- 2018}\\
+{\itshape\color{secondary}Higher Secondary Education}\hfill\textcolor{secondary}{\itshape Lucknow, India} \\ {\color{secondary}12th: 78\% \textperiodcentered{} 10th: 95\%}
+
+\section{Certifications \& Achievements}
+\begin{itemize}
+  \item Full-Stack Web Development -- freeCodeCamp
+  \item Responsive Web Design -- freeCodeCamp
+  \item Ethical Hacking -- iNeuron (Cybersecurity \& Penetration Testing)
+  \item Gold Medalist -- AKTU Zonal Kho-Kho Championship
+\end{itemize}
+
+\end{document}
