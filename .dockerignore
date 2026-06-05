@@ -1,0 +1,15 @@
+.git
+__pycache__
+*.pyc
+*.pyo
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+Generated_Resume/*.pdf
+Generated_Resume/*.tex
+output.pdf
+output.tex
+.env
+*.bak
